@@ -1,3 +1,5 @@
+import './TaskActions.css';
+
 export default function TaskActions({ completed, onToggleComplete, onEdit, onDelete }) {
   return (
     <footer className="task-card__footer">

@@ -1,0 +1,58 @@
+.task-card__footer {
+  align-self: stretch;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.task-card__checkbox-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  color: #e9f1ff;
+}
+
+.task-card__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #8cb4ff;
+}
+
+.task-card__buttons {
+  display: grid;
+  gap: 10px;
+}
+
+.task-card__button {
+  min-height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f4f7fb;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.task-card__button:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.task-card__button--danger {
+  color: #ffd1d1;
+  background: rgba(255, 100, 100, 0.07);
+}
+
+@media (max-width: 860px) {
+  .task-card__footer {
+    min-width: 0;
+  }
+}

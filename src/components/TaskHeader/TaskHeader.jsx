@@ -1,3 +1,5 @@
+import './TaskHeader.css'
+
 export default function TaskHeader({ title, priority, status }) {
   return (
     <header className="task-card__header">

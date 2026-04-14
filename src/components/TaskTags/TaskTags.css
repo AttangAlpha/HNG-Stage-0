@@ -1,0 +1,27 @@
+.task-card__tags-block {
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.task-card__tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(116, 140, 255, 0.15);
+  border: 1px solid rgba(116, 140, 255, 0.2);
+  color: #d5deff;
+  font-size: 0.88rem;
+}

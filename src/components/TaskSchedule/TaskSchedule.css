@@ -1,0 +1,35 @@
+.task-card__schedule {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.task-card__schedule-item,
+.task-card__tags-block {
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.task-card__schedule-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  color: #95a9cb;
+}
+
+.task-card__schedule-value {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.task-card__schedule-value.is-overdue {
+  color: #ff9b9b;
+}
+
+@media (max-width: 640px) {
+  .task-card__schedule {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,51 @@
+.task-card__eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(130, 153, 190, 0.12);
+  color: #c4d6f5;
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+}
+
+.task-card__header,
+.task-card__title-row {
+  display: grid;
+  gap: 14px;
+}
+
+.task-card__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.05;
+}
+
+.task-card__meta-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.pill--priority {
+  background: rgba(255, 184, 76, 0.14);
+  color: #ffd48b;
+  border-color: rgba(255, 184, 76, 0.24);
+}
+
+.pill--status {
+  background: rgba(56, 211, 159, 0.14);
+  color: #89f2ce;
+  border-color: rgba(56, 211, 159, 0.24);
+}
+

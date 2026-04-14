@@ -1,3 +1,5 @@
+import './TaskTags.css';
+
 function toTestId(tag) {
   return `test-todo-tag-${tag.toLowerCase().replace(/\s+/g, '-')}`;
 }

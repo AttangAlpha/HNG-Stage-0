@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
-import TaskHeader from './TaskHeader';
-import TaskDescription from './TaskDescription';
-import TaskSchedule from './TaskSchedule';
-import TaskTags from './TaskTags';
-import TaskActions from './TaskActions';
+import TaskHeader from '../TaskHeader/TaskHeader';
+import TaskDescription from '../TaskDescription/TaskDescription';
+import TaskSchedule from '../TaskSchedule/TaskSchedule';
+import TaskTags from '../TaskTags/TaskTags';
+import TaskActions from '../TaskActions/TaskActions';
+import './TaskCard.css'
 
 export default function TaskCard({ task, refreshMs = 30000, onEdit, onDelete }) {
   const [completed, setCompleted] = useState(task.completed);

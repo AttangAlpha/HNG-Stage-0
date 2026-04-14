@@ -1,6 +1,6 @@
 import { render, screen, cleanup, act, fireEvent } from '@testing-library/react';
 import { afterEach, beforeEach, afterAll, describe, expect, it, vi } from 'vitest';
-import TaskCard from '../components/TaskCard';
+import TaskCard from '../components/TaskCard/TaskCard';
 
 const task = {
   id: 'task-1',

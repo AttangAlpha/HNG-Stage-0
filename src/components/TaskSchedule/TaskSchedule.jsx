@@ -1,4 +1,5 @@
-import { formatDueDate, formatTimeRemaining, isOverdue } from '../utils/time';
+import { formatDueDate, formatTimeRemaining, isOverdue } from '../../utils/time';
+import './TaskSchedule.css';
 
 export default function TaskSchedule({ dueDate, now }) {
   const overdue = isOverdue(dueDate, now);
